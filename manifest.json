@@ -1,0 +1,31 @@
+{
+  "lang": "en-us",
+  "name": "Temperature converter app",
+  "short_name": "Temperature converter",
+  "description": "A basic temperature converter application that can convert",
+  "start_url": "/",
+  "background_color": "#2f3d58",
+  "theme_color": "#2f3d58",
+  "orientation": "any",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/icon512.png",
+      "sizes": "512x512"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "ssNarrow.png",
+      "type": "image/png",
+      "sizes": "690x468",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "ssWide.png",
+      "type": "image/png",
+      "sizes": "1249x674",
+      "form_factor": "wide"
+    }
+  ]
+}

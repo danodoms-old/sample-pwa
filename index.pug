@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=h1, initial-scale=1.0" />
+    <link rel="manifest" href="manifest.json" />
+    <title>Temperature converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Temperature converter</h1>
+
+    <form action="" id="converter">
+      <label for="input-temp">temperature</label>
+      <input type="number" id="input-temp" name="input-temp" />
+
+      <label for="input-unit">from</label>
+      <select name="input-unit" id="input-unit">
+        <option value="c" selected>Celsius</option>
+        <option value="f">Fahrenheit</option>
+        <option value="k">Kelvin</option>
+      </select>
+
+      <label for="output-unit">to</label>
+      <select name="output-unit" id="output-unit">
+        <option value="c">Celsius</option>
+        <option value="f" selected>Fahrenheit</option>
+        <option value="k">Kelvin</option>
+      </select>
+
+      <output name="output-temp" id="output-temp"></output>
+    </form>
+    <script src="converter.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        console.log("hakdog ni jems");
+        navigator.serviceWorker.register("/serviceWorker.js");
+      }
+    </script>
+  </body>
+</html>
